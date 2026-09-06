@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo de Cursos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar__brand">
+      <div class="topbar__logo">CM</div>
+      <span class="topbar__title">CursosMX <small>Formación para toda la vida</small></span>
+    </div>
+    <nav class="topbar__nav">
+      <a href="#">Trámites</a>
+      <a href="#">Gobierno</a>
+    </nav>
+    <button id="btnActualizar" class="btn-actualizar">
+      <span class="btn-actualizar__icon">&#8635;</span> Actualizar Precios
+    </button>
+  </header>
+
+  <main class="content">
+    <h1>Oferta académica</h1>
+    <p class="subtitle">Consulta los cursos disponibles y sus precios en pesos mexicanos y dólares.</p>
+
+    <p id="estadoTipoCambio" class="estado-tc">Tipo de cambio: no actualizado todavía.</p>
+
+    <section class="grid" id="gridCursos">
+      <!-- Las tarjetas se generan también desde script.js, pero se listan aquí como estructura base -->
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Datos de tipo de cambio proporcionados por <a href="https://dolarapi.com" target="_blank" rel="noopener">dolarapi.com</a>.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
